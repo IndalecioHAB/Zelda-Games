@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Proyecto Colaborativo - Línea Temporal HORIZONTAL</title>
+</head>
+<body>
+    
+    <header>
+        <h1> Linea Temporal <span>Zelda</span> </h1>
+    </header>
+
+    <main>
+
+    <div id="contenedor"></div>
+
+    <div id="formulario">
+            
+        <form id="reiniciar" name="juego">
+
+            <div class="descripcion">
+                <p>Añade otras aventuras ZELDA</p>
+            </div>
+            <div class="columnas">
+            <div class="columnaizquierda">
+                <label for="">Descripción del juego</label>
+                <input type="text" name="descripcion" id="descripcion">
+
+                <label for="">Título del juego</label>
+                <input type="text" name="titulo" id="titulo"> 
+            
+                <label for="">Año de lanzamiento</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div class="columnaderecha">
+                <label for="">Enlace de imagen</label>
+                <input type="text" name="enlace" id="enlace">
+
+                <label for="">Enlace de gif</label>
+                <input type="text" name="gif" id="gif">
+            </div>
+            </div>
+
+            <div class="botoncentral">
+                <button type="button" id="enviar" onclick="window.location.reload()">Enviar</button>
+            </div>
+        </form>
+    
+    </div>
+
+    </main>
+
+    <footer>
+        <p>
+        LinkedIn <a target="_blank" href="https://www.linkedin.com/in/indalecio-lopez-castro/"> Inda
+        </p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+
+</html>

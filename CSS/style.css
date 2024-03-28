@@ -1,0 +1,343 @@
+/* Comenzamos el CSS modificando primero las etiquetas globales */
+
+@font-face {
+    font-family: 'Parrafos';
+    src: url(../fonts/RocknRollOne-Regular.ttf)
+
+}
+
+
+@font-face {
+    font-family: 'Titulos';
+    src: url(../fonts/ReggaeOne-Regular.ttf)
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-image: url(../img/htmlBackground2Cesped.png);
+    background-repeat: repeat;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    cursor: url(../img/cursor.png), auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer"
+        ;
+    grid-template-columns: auto;
+    grid-template-rows: 6.5rem 1fr 4rem;
+}
+
+button {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+header {
+    margin: 20px;
+    grid-area: header;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: "Titulos";
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    animation: header 5s infinite;
+}
+
+header span {
+    color:gold;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: content;
+    gap: 20px;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.juego {
+    box-shadow:
+    6px 6px black,
+    -0.5em 0 0.4em black;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 20px;
+    padding: 30px ;
+    background-image: url(../img/JuegoBackground.jpg);
+    background-repeat: round;
+}
+
+
+.juego p {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.juego img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagenes h3 {
+    font-size: 1.7rem;
+    font-family: 'Titulos';
+}
+
+
+.imagen {
+    position: absolute;
+    margin-top: 40px;
+    transition: opacity 0s;
+}
+
+.imagen:hover {
+    opacity: 0;
+}
+
+
+.gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.texto h2 {
+    font-size: 1.6rem;
+    font-family: 'Titulos';
+
+}
+
+.texto p {
+    font-family: 'Parrafos';
+    color: rgb(43, 43, 43);
+}
+
+
+#formulario {
+    box-shadow:
+    6px 6px black,
+    -0.5em 0 0.4em black;
+    width: 60%;
+    min-height: auto;
+    background-image: url(../img/gif2.gif);
+    background-size: 100%;
+    border-radius: 15px;
+    display: flex;
+}
+
+#formulario label {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+
+#reiniciar {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 300px;
+}
+
+
+.descripcion {
+    font-family: 'Parrafos';
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.columnaderecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.columnaizquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.botoncentral {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 5px;
+    grid-area: footer;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+}
+
+@media (max-width: 1100px) {
+
+    label {
+        display: block;
+        text-align: center;
+    }
+
+    .juego {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/backgroundCardMedia.jpg);
+    }
+
+    .juego h2, h3 {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    #formulario {
+        background-image: url(../img/FormBackground.jpg);
+        background-repeat: round;
+    }
+
+    #reiniciar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .columnas {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .columnaizquierda {
+        order: 1;
+    }
+
+    .botoncentral {
+        order: 3;
+    }
+
+    .columnaderecha {
+        order: 2;
+    }
+
+    .botoncentral label {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    footer p {
+        width: 60%;
+    }
+}
+
+/* Esta animacion es la del header */
+
+@keyframes header {
+    0% {
+     transform: scale(1);
+    }
+
+    50% {
+     transform: scale(1.2);
+    }
+
+    100% {
+     transform: scale(1);
+    }
+}
